@@ -14,6 +14,7 @@ from pathlib import Path
 
 import mne
 import numpy as np
+import numpy.typing as npt
 import pytest
 from scipy.io import savemat
 
@@ -24,7 +25,7 @@ MESSY_NAMES = ["Fc5.", "Fc3.", "Cz..", "Fp1.", "T3", "Po3."]
 CLEAN_NAMES = ["FC5", "FC3", "Cz", "Fp1", "T7", "PO3"]
 
 
-def _signal() -> np.ndarray:
+def _signal() -> npt.NDArray[np.float64]:
     """Deterministic per-channel sinusoids in microvolts."""
     rng = np.random.default_rng(42)
     t = np.arange(N_TIMES) / SFREQ
