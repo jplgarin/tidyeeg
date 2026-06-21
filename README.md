@@ -23,8 +23,10 @@ This is v0.1. It is intentionally tight (see [Scope](#scope)).
 ## Install
 
 ```bash
-pip install git+https://github.com/jplgarin/tidyeeg.git                          # core
-pip install "tidyeeg[pandas] @ git+https://github.com/jplgarin/tidyeeg.git"  # adds TidyEEG.to_dataframe()
+# core
+pip install git+https://github.com/jplgarin/tidyeeg.git
+# adds TidyEEG.to_dataframe()
+pip install "tidyeeg[pandas] @ git+https://github.com/jplgarin/tidyeeg.git"
 ```
 
 From a checkout:
