@@ -23,7 +23,7 @@ classifiers = [
 ]
 dependencies = [
     "mne>=1.5",
-    "numpy>=1.23",
+    "numpy>=1.23,<2.2",
 ]
 
 [project.optional-dependencies]
