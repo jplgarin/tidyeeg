@@ -31,7 +31,7 @@ pandas = ["pandas>=1.5"]
 dev = [
     "pytest>=7",
     "ruff>=0.5",
-    "mypy>=1.5",
+    "mypy>=1.11",
     "edfio>=0.4",
     "pandas>=1.5",
 ]
