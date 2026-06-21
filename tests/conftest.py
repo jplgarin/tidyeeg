@@ -31,7 +31,10 @@ def _signal() -> npt.NDArray[np.float64]:
     t = np.arange(N_TIMES) / SFREQ
     freqs = np.array([5.0, 7.0, 9.0, 11.0, 13.0, 15.0])
     base = np.sin(2 * np.pi * np.outer(freqs, t)) * 20.0  # ~20 uV oscillations
-    return base + rng.standard_normal((len(freqs), N_TIMES))
+    signal: npt.NDArray[np.float64] = base + rng.standard_normal(
+        (len(freqs), N_TIMES)
+    )
+    return signal
 
 
 @pytest.fixture(scope="session")
